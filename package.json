@@ -1,0 +1,84 @@
+{
+  "_from": "serp-parser@^1.1.0",
+  "_id": "serp-parser@1.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-FCzwcHWPNF3wiwXTY96YeHfrbEI6eLJR9Y8woIdROmE9Gr22V3dDPOGhEizng4UTTG0gUvx9V4aZle8wroG5xg==",
+  "_location": "/serp-parser",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "serp-parser@^1.1.0",
+    "name": "serp-parser",
+    "escapedName": "serp-parser",
+    "rawSpec": "^1.1.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.1.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/serp-parser/-/serp-parser-1.5.0.tgz",
+  "_shasum": "fe229addc25f0fd2a5b501f90bfe81b84136a229",
+  "_spec": "serp-parser@^1.1.0",
+  "_where": "/Users/yusuf/Desktop/serp-api",
+  "author": {
+    "name": "Zlurad"
+  },
+  "bugs": {
+    "url": "https://github.com/zlurad/serp-parser/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.9",
+    "tslib": "^2.2.0"
+  },
+  "deprecated": false,
+  "description": "SERP Parser for Google",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/fs-extra": "^9.0.11",
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "fs-extra": "^10.0.0",
+    "jest": "^27.0.5",
+    "prettier": "^2.3.0",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "homepage": "https://github.com/zlurad/serp-parser#readme",
+  "keywords": [
+    "SERP",
+    "Google",
+    "Parser"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "serp-parser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zlurad/serp-parser.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint .",
+    "postversion": "git push && git push --tags",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "version": "npm run format && git add -A src"
+  },
+  "types": "lib/index.d.ts",
+  "version": "1.5.0"
+}
